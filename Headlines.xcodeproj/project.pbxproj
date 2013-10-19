@@ -10,6 +10,7 @@
 		9AAE4D8618125E9800BB44E6 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AAE4D8518125E9800BB44E6 /* second.png */; };
 		9AAE4D8818125E9F00BB44E6 /* third.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AAE4D8718125E9F00BB44E6 /* third.png */; };
 		9AAE4D8E1812615300BB44E6 /* fourth.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AAE4D8D1812615300BB44E6 /* fourth.png */; };
+		9AAE4D92181268B900BB44E6 /* Comment.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AAE4D91181268B900BB44E6 /* Comment.png */; };
 		9AB862B71811601300827689 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB862B61811601300827689 /* UIKit.framework */; };
 		9AB862B91811601300827689 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB862B81811601300827689 /* Foundation.framework */; };
 		9AB862BB1811601300827689 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB862BA1811601300827689 /* CoreGraphics.framework */; };
@@ -28,6 +29,7 @@
 		9AAE4D8518125E9800BB44E6 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		9AAE4D8718125E9F00BB44E6 /* third.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = third.png; sourceTree = "<group>"; };
 		9AAE4D8D1812615300BB44E6 /* fourth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fourth.png; path = Headlines/Images/fourth.png; sourceTree = SOURCE_ROOT; };
+		9AAE4D91181268B900BB44E6 /* Comment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Comment.png; path = Headlines/Images/Comment.png; sourceTree = SOURCE_ROOT; };
 		9AB862B31811601300827689 /* Headlines.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Headlines.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB862B61811601300827689 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9AB862B81811601300827689 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -125,6 +127,7 @@
 				9AAE4D8518125E9800BB44E6 /* second.png */,
 				9AAE4D8718125E9F00BB44E6 /* third.png */,
 				9AAE4D8D1812615300BB44E6 /* fourth.png */,
+				9AAE4D91181268B900BB44E6 /* Comment.png */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				9AAE4D8618125E9800BB44E6 /* second.png in Resources */,
 				9AAE4D8818125E9F00BB44E6 /* third.png in Resources */,
 				9AAE4D8E1812615300BB44E6 /* fourth.png in Resources */,
+				9AAE4D92181268B900BB44E6 /* Comment.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

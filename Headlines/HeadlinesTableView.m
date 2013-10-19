@@ -18,9 +18,8 @@
     }
     return self;
 }
--(void)createCellImageView{
-    
-}
+
+
 
 -(void)createImageView:(UITableViewCell *)cell :(NSInteger)indexSection{
     
@@ -40,17 +39,26 @@
     [cell addSubview:imageView];
 }
 
--(void)createRecommedButton :(UITableViewCell *)cell{
+-(void)createRecommedButton :(UITableViewCell *)cell :(NSInteger)indexSection{
     
-    UIButton *recommedButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [recommedButton setFrame: CGRectMake(20, 57, 40, 15)];
-    [recommedButton setBackgroundColor: [UIColor redColor]];
-    [recommedButton setTitle:@"推荐" forState:UIControlStateNormal];
-    recommedButton.titleLabel.font =[UIFont boldSystemFontOfSize:12];
-    [recommedButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [cell addSubview:recommedButton];
-}
+    if (indexSection%2 == 0) {
+        
+        UIButton *recommedButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [recommedButton setFrame: CGRectMake(20, 57, 40, 15)];
+        [recommedButton setBackgroundColor: [UIColor redColor]];
+        [recommedButton setTitle:@"推荐" forState:UIControlStateNormal];
+        recommedButton.titleLabel.font =[UIFont boldSystemFontOfSize:12];
+        [recommedButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [cell addSubview:recommedButton];
+    }
 
+}
+-(void)createCellStyleShow:(UITableViewCell *)cell :(NSInteger)indexSection{
+    
+    [self createRecommedButton:cell :indexSection];
+    [self createImageView:cell :indexSection];
+    //[self createCommentButton:cell :indexSection];
+}
 
 -(void)createHeadlinesTableView :(UITableViewController *)headlinesViewController{
     
@@ -60,6 +68,8 @@
     [headlinesViewController.view addSubview:headlinesTableView];
     
 }
+
+
 
 /*
 // Only override drawRect: if you perform custom drawing.

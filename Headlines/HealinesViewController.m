@@ -73,8 +73,7 @@
     cell.textLabel.text = [labelTextArray objectAtIndex:indexPath.section];
     cell.selectionStyle =UITableViewCellSelectionStyleNone;
     HeadlinesTableView *cellHeadlinesTableView = [[HeadlinesTableView alloc]init];
-    [cellHeadlinesTableView createRecommedButton:cell];
-    [cellHeadlinesTableView createImageView:cell :indexPath.section];
+    [cellHeadlinesTableView createCellStyleShow:cell :indexPath.section];
     return cell;
 }
 
