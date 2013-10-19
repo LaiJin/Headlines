@@ -72,25 +72,9 @@
     cell.textLabel.font =[UIFont boldSystemFontOfSize:16 ];
     cell.textLabel.text = [labelTextArray objectAtIndex:indexPath.section];
     cell.selectionStyle =UITableViewCellSelectionStyleNone;
-    UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(235, 10, 70, 60)];
-    if (indexPath.section == 0) {
-        imageView.image = [UIImage imageNamed:@"first.png"];
-    }
-    if (indexPath.section == 1) {
-        
-        imageView.image = [UIImage imageNamed:@"second.png"];
-        
-    }
-    if (indexPath.section == 3) {
-        imageView.image = [UIImage imageNamed:@"third.png"];
-    }
-    
-    if (indexPath.section == 4) {
-        imageView.image = [UIImage imageNamed:@"fourth.png"];
-    }
-    [cell addSubview:imageView];
     HeadlinesTableView *cellHeadlinesTableView = [[HeadlinesTableView alloc]init];
     [cellHeadlinesTableView createRecommedButton:cell];
+    [cellHeadlinesTableView createImageView:cell :indexPath.section];
     return cell;
 }
 

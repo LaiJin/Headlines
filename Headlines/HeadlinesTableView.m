@@ -22,6 +22,24 @@
     
 }
 
+-(void)createImageView:(UITableViewCell *)cell :(NSInteger)indexSection{
+    
+    UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(235, 10, 70, 60)];
+    if (indexSection == 0) 
+        imageView.image = [UIImage imageNamed:@"first.png"];
+    
+    if (indexSection == 1) 
+        imageView.image = [UIImage imageNamed:@"second.png"];
+    
+    if (indexSection == 3) 
+        imageView.image = [UIImage imageNamed:@"third.png"];
+    
+    if (indexSection == 4) 
+        imageView.image = [UIImage imageNamed:@"fourth.png"];
+    
+    [cell addSubview:imageView];
+}
+
 -(void)createRecommedButton :(UITableViewCell *)cell{
     
     UIButton *recommedButton = [UIButton buttonWithType:UIButtonTypeCustom];

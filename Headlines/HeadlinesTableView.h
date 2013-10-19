@@ -14,6 +14,6 @@
 
 -(void)createHeadlinesTableView :(HealinesViewController *)headlinesViewController;
 -(void)createRecommedButton :(UITableViewCell *)cell;
-
+-(void)createImageView :(UITableViewCell *)cell :(NSInteger)indexpath;
 
 @end
