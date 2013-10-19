@@ -18,8 +18,29 @@
     }
     return self;
 }
-
-
+-(void)createCommentLabel :(UITableViewCell *)cell :(NSInteger)indexSection{
+    
+    NSMutableArray *commentNumbers = [NSMutableArray arrayWithObjects:@"2873",@"545",@"5732",@"519",@"88888",nil];
+    UILabel  *commentLabel = [[UILabel alloc]init];
+    if (indexSection%2 == 0) 
+        [commentLabel  setFrame:CGRectMake(90, 56, 50, 18)];
+    else
+        [commentLabel  setFrame:CGRectMake(45, 56, 50, 18)];
+    [commentLabel  setTextColor:[UIColor grayColor]];
+    [commentLabel  setBackgroundColor:[UIColor clearColor]];
+    [commentLabel setText:[commentNumbers objectAtIndex:indexSection]];
+    [cell addSubview:commentLabel];
+}
+-(void)createCommentButton:(UITableViewCell *)cell :(NSInteger)indexSection{
+    
+    UIButton *commentButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    if (indexSection%2 == 0) 
+        [commentButton setFrame: CGRectMake(56, 45, 40, 40)];
+    else
+        [commentButton setFrame:CGRectMake(10, 45, 40, 40)];
+    [commentButton setBackgroundImage:[UIImage imageNamed:@"Comment.png"] forState:UIControlStateNormal];
+    [cell addSubview:commentButton];
+}
 
 -(void)createImageView:(UITableViewCell *)cell :(NSInteger)indexSection{
     
@@ -57,7 +78,8 @@
     
     [self createRecommedButton:cell :indexSection];
     [self createImageView:cell :indexSection];
-    //[self createCommentButton:cell :indexSection];
+    [self createCommentButton:cell :indexSection];
+    [self createCommentLabel:cell:indexSection];
 }
 
 -(void)createHeadlinesTableView :(UITableViewController *)headlinesViewController{

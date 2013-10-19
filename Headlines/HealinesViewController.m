@@ -71,7 +71,7 @@
     cell.textLabel.numberOfLines = 2;
     cell.textLabel.font =[UIFont boldSystemFontOfSize:16 ];
     cell.textLabel.text = [labelTextArray objectAtIndex:indexPath.section];
-    cell.selectionStyle =UITableViewCellSelectionStyleNone;
+    cell.selectionStyle =UITableViewCellSelectionStyleNone;//让cell点击是不出现蓝色填充
     HeadlinesTableView *cellHeadlinesTableView = [[HeadlinesTableView alloc]init];
     [cellHeadlinesTableView createCellStyleShow:cell :indexPath.section];
     return cell;
@@ -84,7 +84,7 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    return 73;
+    return 75;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
